@@ -14,7 +14,7 @@ app.get('/hello', (req, res, next) => {
 });
 
 //define port
-const port = process.env;
+const port = process.env.PORT;
 
 app.listen(port, () => {
     console.log('the magic happens at port ' + port)
