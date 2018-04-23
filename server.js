@@ -9,12 +9,12 @@ app.all('*', (request, response, next) => {
 
 
 app.get('/hello', (req, res, next) => {
-    res.status(200).json
+    res.status(200).json("Hello!");
 
-})
+});
 
 //define port
-const port = 8080;
+const port = process.env;
 
 app.listen(port, () => {
     console.log('the magic happens at port ' + port)
